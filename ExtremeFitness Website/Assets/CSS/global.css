@@ -1,0 +1,259 @@
+/* ================== Global Reset & Body Start (Homepage.html, All Pages) ================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* ================== Global Reset & Body End ================== */
+
+/* ================== Header Section Start (Common for All Pages) ================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #FFFF00;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+
+
+body {
+    padding-top: 80px; /* Adjust to match header height */
+}
+
+header .logo img {
+    width: 120px;
+}
+
+/* Centered Navigation */
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the navigation */
+    gap: 40px; /* Adjust gap between nav items for equal spacing */
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Auth Button in Header */
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #000;
+    color: #fffefe;
+}
+
+/* Header Navigation Animations */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+nav ul li a:active {
+    color: #ff6b6b; /* Change to a noticeable color when clicked */
+    transition: color 0.1s ease;
+}
+
+/* Social Media Icons in the Header */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right .social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-right .social-icon:hover {
+    color: #ff6b6b; /* Changes color on hover for a visual effect */
+}
+
+nav ul li a.active {
+    color: #ff6b6b; /* Highlight active tab with a different color */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    top: 135%;
+    display: none;
+    border-radius: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7); 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 0px;
+}
+
+/* ================== Header Section End ================== */
+
+
+/* ================== Global Body Adjustments for Layout ================== */
+
+/* Add padding to prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+/* Ensure the text in the trainers section is centered */
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding for better spacing */
+}
+
+.trainers-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.trainers-header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .centered-section {
+        padding: 50px 20px;
+    }
+
+    .trainers-header h1 {
+        font-size: 2rem;
+    }
+
+    .trainers-header p {
+        font-size: 1rem;
+    }
+}
+
+/* ================== Global Body Adjustments End ================== */
+
+/* ================== Responsive Layout for Mobile (below 768px) ================== */
+
+@media (max-width: 768px) {
+    /* Responsive Layout for Hero Section, Equipment Cards, Training, Classes, and Footer */
+    .hero-section,
+    .equipment-cards,
+    .training-section,
+    .classes-section,
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Responsive adjustments for Gallery Images */
+    .gallery img {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    /* Responsive adjustments for Equipment Cards and Class Category */
+    .equipment-card,
+    .class-category {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive adjustments for Training Image */
+    .training-image img {
+        width: 100%;
+    }
+
+    /* Responsive adjustments for Footer Links and Footer Bottom */
+    .footer-links, .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ================== Responsive Layout End ================== */
