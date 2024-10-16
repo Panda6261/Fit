@@ -1,0 +1,757 @@
+/* ================== Hero Section Start (Homepage.html) ================== */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.hero-buttons .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content, .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+/* ================== Hero Section End ================== */
+
+
+
+/* ================== Personalized Training Section Start (Homepage.html) ================== */
+
+.training-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px; /* Adjust padding as needed */
+    background-color: #f4f4f4; /* Light green background to make this section stand out */
+}
+
+    .hero-section,
+    .training-content {
+    flex: 1;
+    padding-right: 50px; /* Space between text and image */
+}
+
+.training-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.training-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.training-buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.training-buttons .button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.training-buttons .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.training-image {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+}
+
+.training-image img {
+    width: 90%; /* Image takes up most of the available space */
+    height: auto;
+    max-width: 450px; /* Set max width for larger screens */
+}
+
+/* Responsive Layout for Personalized Training Section */
+@media (max-width: 768px) {
+    .training-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .training-content, .training-image {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .training-image img {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* ================== Personalized Training Section End ================== */
+
+
+
+/* ================== Member Feedback Section Start (Homepage.html) ================== */
+
+.feedback-section {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feedback-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feedback-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.filter-options {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.filter-options select {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Reviews List */
+.reviews-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Review Card */
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.star-rating {
+    font-size: 1.2rem;
+    color: #FFD700; /* Gold star color */
+}
+
+.review-text {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Submit Review Section */
+.submit-review {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.submit-review h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.submit-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-review form input,
+.submit-review form select,
+.submit-review form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-review form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-review form button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* ================== Member Feedback Section End ================== */
+
+
+/* ================== Achievements and Stats Section Start (Homepage.html) ================== */
+
+.achievements-section {
+    padding: 50px 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.achievements-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.achievements-header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.achievements-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Layout for Achievements and Stats */
+@media (max-width: 768px) {
+    .achievements-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ================== Achievements and Stats Section End ================== */
+
+
+/* ================== Newsletter Subscription Section Start (Homepage.html) ================== */
+
+.newsletter-section {
+    padding: 60px 20px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.trial-callout {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.trial-callout strong {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.terms {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Layout for Newsletter Section */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input, .newsletter-form button {
+        width: 100%;
+    }
+}
+
+/* ================== Newsletter Subscription Section End ================== */
+
+
+/* ================== Contact Section Start (Homepage.html) ================== */
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-left {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.contact-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-left p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-right ul {
+    list-style: none;
+}
+
+.contact-right ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-right ul li i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.contact-right ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-right ul li address {
+    margin: 0;
+    font-style: normal;
+}
+
+.contact-map {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Responsive Layout for Contact Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* ================== Contact Section End ================== */
+
+
+/* ================== Location and Map Section Start ================== */
+
+.location-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.location-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.location-left {
+    flex: 1;
+}
+
+.location-left h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.location-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.location-left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.location-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.location-left ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.location-left ul li i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.location-left ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.location-left ul li address,
+.location-left ul li p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.location-right {
+    flex: 1;
+    text-align: center;
+}
+
+.location-right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Layout for Location Section */
+@media (max-width: 768px) {
+    .location-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-left,
+    .location-right {
+        width: 100%;
+    }
+}
+
+/* ================== Location and Map Section End ================== */
+
+
+/* ================== Footer Section Start ================== */
+
+.footer-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-section h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.brand-logos img {
+    max-width: 100px;
+    height: auto;
+}
+
+.subscribe-updates {
+    margin-bottom: 50px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #333;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    width: 200px;
+    text-align: left;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.footer-bottom img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Layout for Footer */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ================== Footer Section End ================== */
+
+
+/* ================== About Us Section Start ================== */
+
+.about-us-section {
+    padding: 60px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h1, .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Team Section (within About Us Section) */
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.team-member {
+    width: 30%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+}
+
+/* ================== About Us Section End ================== */
+
